@@ -4,6 +4,7 @@ class AddSeasonToShows < ActiveRecord::Migration
   end
 
   def highest_rating
+    binding.pry
     Show.maximum(:rating)
   end
 end
